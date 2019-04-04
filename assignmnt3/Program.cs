@@ -89,4 +89,32 @@ class DataStructureQueue : IDataStructure
         q1.Enqueue("EmbeddedProcessor");
     }
 
+    public void Run()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            q1.Enqueue(new Student());
+        }
+        Sort1 = new Sort_DataStructure(Sorter);
+    }
+    public void Sort()
+    {
+    }
+
+}
+
+class DataStructureStack : IDataStructure
+{
+
+    // the STACK holds the Students
+
+    public Stack s1 = new Stack();
+    Sort_DataStructure Sort1;
+    public void Sorter()
+    {
+
+        // TO DO : sort the Stack
+        Sort(Stack);
+
+    }
 }
